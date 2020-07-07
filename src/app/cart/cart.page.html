@@ -1,0 +1,53 @@
+<ion-header>
+  <ion-toolbar color="tertiary">
+    <ion-buttons slot="start">
+      <ion-button color ="light" (click)="pop()">
+        <ion-icon slot="icon-only" name="arrow-back"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+    <ion-title>Profile</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content style="background-color: whitesmoke;">
+  <div class="ion-padding" >
+
+<h1>Your Profile</h1>
+<h6>Personal information</h6>  
+    <br>
+    
+    <ion-item class="nurboarder">
+      <!-- <ion-label position="floating">Floating Label</ion-label> -->
+      <ion-input clear-input [(ngModel)]="name"   placeholder="Name"> </ion-input>
+    </ion-item>
+    <br>
+    <ion-item class="nurboarder" >
+      <!-- <ion-label position="floating">Floating Label</ion-label> -->
+      <ion-input clear-input [(ngModel)]="surname" placeholder="Surname"> </ion-input>
+    </ion-item>
+    <br>
+    <ion-item class="nurboarder" >
+      <!-- <ion-label position="floating">Floating Label</ion-label> -->
+      <ion-input clear-input type="number" [(ngModel)]="phone"  placeholder="Phone number"> </ion-input>
+    </ion-item>
+<br>
+    <ion-button expand="block" color="tertiary" shape="round" (click)="update()">Update</ion-button>
+  
+<br>
+<ion-card style="background-color: whitesmoke; border-radius: 8px;">
+  <ion-card-header>
+    <ion-card-title >
+      Your reference
+    </ion-card-title>
+    <ion-card-subtitle>Use this as your bank reference number</ion-card-subtitle>
+    
+  </ion-card-header>
+
+  <ion-card-content style="color: black; font-size: larger; margin: 0 auto; font-weight: 500; display: flex; justify-content: center;;">
+   {{uid}}
+  </ion-card-content>
+</ion-card>
+<ion-button expand="block" color="tertiary" fill="outline" shape="round" (click)="openwebsite()">Website</ion-button>
+<ion-button expand="block" color="tertiary" fill="clear" shape="round" (click)="logout()">Sign-Out</ion-button>
+</div>
+</ion-content>

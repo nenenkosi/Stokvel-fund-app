@@ -1,0 +1,36 @@
+<!-- <ion-header>
+  <ion-toolbar>
+    <ion-title>loginx</ion-title>
+  </ion-toolbar>
+</ion-header> -->
+
+<ion-content>
+  <div class="background">
+
+  
+<h1 class="ion-text-center logo" >Babies Foundation</h1>
+<p class="ion-text-center slogo">Simple Seed Busyness</p>
+</div>
+<div class="ion-padding">
+<div class="maincontentcenter">
+  <h2>Welcome</h2>
+  <br>
+  <ion-item>
+    <ion-label position="stacked">Email</ion-label>
+    <ion-input [(ngModel)]="email"></ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-label position="stacked">Password</ion-label>
+    <ion-input [(ngModel)]="password"></ion-input>
+  </ion-item>
+  <br>
+  <br>
+<ion-button expand="block" color="tertiary" shape="round" (click)="SignIn()">Login</ion-button>
+<p class="ion-text-center" >or</p>
+<ion-button expand="block" shape="round" color="tertiary" fill="outline" (click)="signup()">Sign-Up</ion-button>
+<ion-button expand="block"  slot="end" color="tertiary" fill="clear" (click)="forgetPassword()">Forgot Password</ion-button>
+
+</div>
+</div>
+
+</ion-content>

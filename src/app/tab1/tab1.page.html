@@ -1,0 +1,119 @@
+<!-- <ion-header >
+  <ion-toolbar color ="tertiary">
+    <ion-title class="ion-text-center">
+      Home
+    </ion-title>
+  </ion-toolbar>
+</ion-header> -->
+<ion-toolbar color ="tertiary">
+
+  <ion-buttons slot="start">
+    <ion-button color ="light" (click)="next()">
+      <ion-icon slot="icon-only" name="contact"></ion-icon>
+    </ion-button>
+  </ion-buttons>
+  <ion-title class="ion-text-center" style="    position: relative; right: 3vh;"> Current Balance</ion-title>
+  <!-- <ion-buttons slot="end">
+    <ion-button color ="light">
+      <ion-icon slot="icon-only" name="more"></ion-icon>
+    </ion-button>
+  </ion-buttons> -->
+</ion-toolbar>
+
+<ion-content>
+  <div class="mainacc">
+    <div class="centermain">
+      <!-- <div class="inlineseed">
+      <h1 class="ion-text-center maintext" style="font-size: 30px;" >R{{initvalue}}</h1>
+      <p class="seed">Seed</p>
+    </div>
+      <p class="ion-text-center maintext" > Current Balance</p> -->
+    </div>
+  
+  </div>
+ <div class="background ion-padding">
+
+  <div  class="expen ion-padding">
+    <h2 class="titlex">Seed <ion-icon name="leaf"></ion-icon></h2>
+
+<div class="textflex">
+<div>
+
+<h1 class="subtotal">R{{initvalue}}</h1>
+
+
+<p class="subtotaltext">Total </p>
+</div>
+<div>
+<h4 class="subtotal ion-text-center" style="visibility: hidden;">50%</h4>
+<p class="subtotaltext">Clean</p>
+</div>
+
+</div>
+<ion-icon slot="end" class="topicon" color ="tertiary" mode="ios" name="arrow-forward" ></ion-icon>
+<ion-progress-bar mode="ios" color="tertiary" value="1"  buffer=""></ion-progress-bar>
+
+  </div>
+
+      <div  class="expen ion-padding">
+        <h2 class="titlex">Capital <ion-icon name="cash"></ion-icon></h2>
+
+<div class="textflex">
+  <div>
+  
+    <h1 class="subtotal">R{{takeCare}}</h1>
+   
+
+    <p class="subtotaltext">Total </p>
+  </div>
+<div>
+  <h4 class="subtotal ion-text-center" style="visibility: hidden;">50%</h4>
+  <p class="subtotaltext">Keep</p>
+</div>
+
+</div>
+<ion-icon slot="end" class="topicon" color ="tertiary" mode="ios" name="arrow-forward" ></ion-icon>
+<ion-progress-bar mode="ios" color="tertiary" value="0.75"  buffer=""></ion-progress-bar>
+
+      </div>
+
+      
+      <div class="incom ion-padding">
+        <h2 class="titlex">Shares <ion-icon name="trending-up"></ion-icon></h2>
+        
+        <div class="textflex">
+          <div>
+            <h1 class="subtotal">R{{natonal}}</h1>
+            <p class="subtotaltext">Total </p>
+          </div>
+        <div>
+          <h4 class="subtotal ion-text-center" style="visibility: hidden;">50%</h4>
+          <p class="subtotaltext">Keep</p>
+        </div>
+        
+      </div>
+        <ion-icon slot="end" class="topicon" color ="tertiary" mode="ios" name="arrow-forward" ></ion-icon>
+<ion-progress-bar mode="ios" color="tertiary" value="0.50"  buffer=""></ion-progress-bar>
+      </div>
+      <div class="goal ion-padding">
+        <h2 class="titlex">Work  <ion-icon name="briefcase"></ion-icon></h2>
+        
+        <div class="textflex">
+          <div>
+            <h1 class="subtotal">R{{work}}</h1>
+            <p class="subtotaltext">Total </p>
+          </div>
+        <div>
+          <h4 class="subtotal ion-text-center" style="visibility: hidden;">50%</h4>
+          <p class="subtotaltext">Protect </p>
+        </div>
+        
+      </div>
+        <ion-icon slot="end" class="topicon" color ="tertiary" mode="ios" name="arrow-forward"></ion-icon>
+<ion-progress-bar mode="ios" color="tertiary" value="0.15"  buffer=""></ion-progress-bar>
+      </div>
+
+     
+
+ </div>
+</ion-content>
