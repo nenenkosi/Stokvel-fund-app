@@ -102,7 +102,9 @@ export class CartPage implements OnInit {
   }
 
   openwebsite(){
-    window.open("https://mafisha-babiesfoundation.co.za/");
+    //open websit
+    // window.open("https://mafisha-babiesfoundation.co.za/");
+    window.open("http://mafisha-foundation.co.za/my-contributions/");
   }
   logout() {
     return new Promise((resolve, reject) => {
